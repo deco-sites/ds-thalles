@@ -12,7 +12,7 @@
           "type": "string",
           "not": {
             "enum": [
-              "deco-sites/start/functions/LoadGitHubRaw.ts",
+              "deco-sites/ds-thalles/functions/LoadGitHubRaw.ts",
               "deco-sites/std/functions/butterCMSAds.ts",
               "deco-sites/std/functions/butterCMSBrands.ts",
               "deco-sites/std/functions/butterCMSCategories.ts",
@@ -70,9 +70,7 @@
               "$live/sections/PageInclude.tsx",
               "$live/sections/Slot.tsx",
               "$live/sections/UseSlot.tsx",
-              "deco-sites/start/sections/DesignSystem.tsx",
-              "deco-sites/start/sections/GetStarted.tsx",
-              "deco-sites/start/sections/Head.tsx",
+              "deco-sites/ds-thalles/sections/Head.tsx",
               "deco-sites/std/sections/Analytics.tsx",
               "deco-sites/std/sections/configButterCMS.global.tsx",
               "deco-sites/std/sections/configOCC.global.tsx",
@@ -116,7 +114,7 @@
         }
       }
     },
-    "ZGVjby1zaXRlcy9zdGFydC9mdW5jdGlvbnMvTG9hZEdpdEh1YlJhdy50cw==@Props": {
+    "ZGVjby1zaXRlcy9kcy10aGFsbGVzL2Z1bmN0aW9ucy9Mb2FkR2l0SHViUmF3LnRz@Props": {
       "type": "object",
       "properties": {
         "repo": {
@@ -140,7 +138,7 @@
         "branch",
         "path"
       ],
-      "title": "deco-sites/start/functions/LoadGitHubRaw.ts@Props"
+      "title": "deco-sites/ds-thalles/functions/LoadGitHubRaw.ts@Props"
     },
     "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvYnV0dGVyQ01TL3R5cGVzLnRz@Category": {
       "type": "object",
@@ -6893,343 +6891,7 @@
       ],
       "title": "deco-cx/live/sections/UseSlot.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Colors": {
-      "type": "object",
-      "properties": {
-        "primary": {
-          "type": "string",
-          "format": "color",
-          "default": "#003232",
-          "title": "Primary"
-        },
-        "primary-focus": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "color",
-          "description": "Will be a darker tone of primary if not specified",
-          "title": "Primary-focus"
-        },
-        "primary-content": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "color",
-          "description": "Will be a readable tone of primary if not specified",
-          "title": "Primary-content"
-        },
-        "secondary": {
-          "type": "string",
-          "format": "color",
-          "default": "#8C3D3D",
-          "title": "Secondary"
-        },
-        "secondary-focus": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "color",
-          "description": "Will be a darker tone of secondary if not specified",
-          "title": "Secondary-focus"
-        },
-        "secondary-content": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "color",
-          "description": "Will be a readable tone of secondary if not specified",
-          "title": "Secondary-content"
-        },
-        "accent": {
-          "type": "string",
-          "format": "color",
-          "default": "#00FF7F",
-          "title": "Accent"
-        },
-        "accent-focus": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "color",
-          "description": "Will be a darker tone of accent if not specified",
-          "title": "Accent-focus"
-        },
-        "accent-content": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "color",
-          "description": "Will be a readable tone of accent if not specified",
-          "title": "Accent-content"
-        },
-        "neutral": {
-          "type": "string",
-          "format": "color",
-          "default": "#333333",
-          "title": "Neutral"
-        },
-        "neutral-focus": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "color",
-          "description": "Will be a darker tone of neutral if not specified",
-          "title": "Neutral-focus"
-        },
-        "neutral-content": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "color",
-          "description": "Will be a readable tone of neutral if not specified",
-          "title": "Neutral-content"
-        },
-        "base-100": {
-          "type": "string",
-          "format": "color",
-          "default": "#FFFFFF",
-          "title": "Base-100"
-        },
-        "base-200": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "color",
-          "description": "Will be a darker tone of base-100 if not specified",
-          "title": "Base-200"
-        },
-        "base-300": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "color",
-          "description": "Will be a darker tone of base-200 if not specified",
-          "title": "Base-300"
-        },
-        "base-content": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "color",
-          "description": "Will be a readable tone of base-100 if not specified",
-          "title": "Base-content"
-        },
-        "success": {
-          "type": "string",
-          "format": "color",
-          "default": "#EAFAF2",
-          "title": "Success"
-        },
-        "success-content": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "color",
-          "description": "Will be a readable success of neutral if not specified",
-          "title": "Success-content"
-        },
-        "warning": {
-          "type": "string",
-          "format": "color",
-          "default": "#FFF8E6",
-          "title": "Warning"
-        },
-        "warning-content": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "color",
-          "description": "Will be a readable tone of warning if not specified",
-          "title": "Warning-content"
-        },
-        "error": {
-          "type": "string",
-          "format": "color",
-          "default": "#FFE9E5",
-          "title": "Error"
-        },
-        "error-content": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "color",
-          "description": "Will be a readable tone of error if not specified",
-          "title": "Error-content"
-        },
-        "info": {
-          "type": "string",
-          "format": "color",
-          "default": "#F0F5FF",
-          "title": "Info"
-        },
-        "info-content": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "color",
-          "description": "Will be a readable tone of info if not specified",
-          "title": "Info-content"
-        }
-      },
-      "required": [
-        "primary",
-        "secondary",
-        "accent",
-        "neutral",
-        "base-100",
-        "success",
-        "warning",
-        "error",
-        "info"
-      ],
-      "title": "Colors"
-    },
-    "ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Miscellaneous": {
-      "type": "object",
-      "properties": {
-        "--rounded-box": {
-          "type": "string",
-          "default": "1rem",
-          "title": "--rounded-box",
-          "description": "border radius rounded-box utility class, used in card and other large boxes"
-        },
-        "--rounded-btn": {
-          "type": "string",
-          "default": "0.5rem",
-          "title": "--rounded-btn",
-          "description": "border radius rounded-btn utility class, used in buttons and similar element"
-        },
-        "--rounded-badge": {
-          "type": "string",
-          "default": "1.9rem",
-          "title": "--rounded-badge",
-          "description": "border radius rounded-badge utility class, used in badges and similar"
-        },
-        "--animation-btn": {
-          "type": "string",
-          "default": "0.25s",
-          "title": "--animation-btn",
-          "description": "duration of animation when you click on button"
-        },
-        "--animation-input": {
-          "type": "string",
-          "default": "0.2s",
-          "title": "--animation-input",
-          "description": "duration of animation for inputs like checkbox, toggle, radio, etc"
-        },
-        "--btn-text-case": {
-          "type": "string",
-          "default": "uppercase",
-          "title": "--btn-text-case",
-          "description": "set default text transform for buttons"
-        },
-        "--btn-focus-scale": {
-          "type": "string",
-          "default": "0.95",
-          "title": "--btn-focus-scale",
-          "description": "scale transform of button when you focus on it"
-        },
-        "--border-btn": {
-          "type": "string",
-          "default": "1px",
-          "title": "--border-btn",
-          "description": "border width of buttons"
-        },
-        "--tab-border": {
-          "type": "string",
-          "default": "1px",
-          "title": "--tab-border",
-          "description": "border width of tabs"
-        },
-        "--tab-radius": {
-          "type": "string",
-          "default": "0.5rem",
-          "title": "--tab-radius",
-          "description": "border radius of tabs"
-        }
-      },
-      "required": [
-        "--rounded-box",
-        "--rounded-btn",
-        "--rounded-badge",
-        "--animation-btn",
-        "--animation-input",
-        "--btn-text-case",
-        "--btn-focus-scale",
-        "--border-btn",
-        "--tab-border",
-        "--tab-radius"
-      ],
-      "title": "Miscellaneous"
-    },
-    "ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Font": {
-      "type": "object",
-      "properties": {
-        "fontFamily": {
-          "type": "string",
-          "default": "'Albert Sans'",
-          "title": "Font Family"
-        },
-        "styleInnerHtml": {
-          "type": "string",
-          "title": "Style Inner Html"
-        }
-      },
-      "required": [
-        "fontFamily",
-        "styleInnerHtml"
-      ],
-      "title": "Font"
-    },
-    "ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Props": {
-      "type": "object",
-      "properties": {
-        "colors": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Colors",
-          "title": "Colors"
-        },
-        "miscellaneous": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Miscellaneous",
-          "title": "Miscellaneous"
-        },
-        "fonts": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Font",
-          "title": "Fonts"
-        }
-      },
-      "required": [],
-      "title": "deco-sites/start/sections/DesignSystem.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9HZXRTdGFydGVkLnRzeA==@Props": {
-      "type": "object",
-      "properties": {
-        "enableInspectVSCode": {
-          "type": [
-            "boolean",
-            "null"
-          ],
-          "title": "Enable Inspect V S Code"
-        }
-      },
-      "required": [],
-      "title": "deco-sites/start/sections/GetStarted.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9IZWFkLnRzeA==@Props": {
+    "ZGVjby1zaXRlcy9kcy10aGFsbGVzL3NlY3Rpb25zL0hlYWQudHN4@Props": {
       "type": "object",
       "properties": {
         "title": {
@@ -7265,7 +6927,7 @@
         "faviconUrl",
         "themeColor"
       ],
-      "title": "deco-sites/start/sections/Head.tsx@Props"
+      "title": "deco-sites/ds-thalles/sections/Head.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy9BbmFseXRpY3MudHN4@Props": {
       "type": "object",
@@ -7770,7 +7432,7 @@
       ],
       "title": "WorkflowRef"
     },
-    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef|a644f04e64ddc307d5353346f01dc4c2": {
+    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef|e0fb6c54a7d05856a665c93dafcac699": {
       "anyOf": [
         {
           "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef"
@@ -7788,13 +7450,13 @@
           ]
         }
       ],
-      "title": "WorkflowRef|a644f04e64ddc307d5353346f01dc4c2"
+      "title": "WorkflowRef|e0fb6c54a7d05856a665c93dafcac699"
     },
     "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@Props": {
       "type": "object",
       "properties": {
         "workflow": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef|a644f04e64ddc307d5353346f01dc4c2",
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef|e0fb6c54a7d05856a665c93dafcac699",
           "title": "Workflow"
         },
         "id": {
@@ -8178,13 +7840,13 @@
       ],
       "title": "deco-sites/std/packs/vtex/actions/wishlist/removeItem.ts@Props"
     },
-    "ZGVjby1zaXRlcy9zdGFydC9mdW5jdGlvbnMvTG9hZEdpdEh1YlJhdy50cw==": {
+    "ZGVjby1zaXRlcy9kcy10aGFsbGVzL2Z1bmN0aW9ucy9Mb2FkR2l0SHViUmF3LnRz": {
       "title": "GitHub Raw Loader",
       "description": "Grabs data from a GitHub repo",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydC9mdW5jdGlvbnMvTG9hZEdpdEh1YlJhdy50cw==@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kcy10aGFsbGVzL2Z1bmN0aW9ucy9Mb2FkR2l0SHViUmF3LnRz@Props"
         }
       ],
       "required": [
@@ -8194,9 +7856,9 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "deco-sites/start/functions/LoadGitHubRaw.ts"
+            "deco-sites/ds-thalles/functions/LoadGitHubRaw.ts"
           ],
-          "default": "deco-sites/start/functions/LoadGitHubRaw.ts"
+          "default": "deco-sites/ds-thalles/functions/LoadGitHubRaw.ts"
         }
       }
     },
@@ -9376,12 +9038,12 @@
         }
       }
     },
-    "ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4": {
-      "title": "deco-sites/start/sections/DesignSystem.tsx",
+    "ZGVjby1zaXRlcy9kcy10aGFsbGVzL3NlY3Rpb25zL0hlYWQudHN4": {
+      "title": "deco-sites/ds-thalles/sections/Head.tsx",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kcy10aGFsbGVzL3NlY3Rpb25zL0hlYWQudHN4@Props"
         }
       ],
       "required": [
@@ -9391,51 +9053,9 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "deco-sites/start/sections/DesignSystem.tsx"
+            "deco-sites/ds-thalles/sections/Head.tsx"
           ],
-          "default": "deco-sites/start/sections/DesignSystem.tsx"
-        }
-      }
-    },
-    "ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9HZXRTdGFydGVkLnRzeA==": {
-      "title": "deco-sites/start/sections/GetStarted.tsx",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9HZXRTdGFydGVkLnRzeA==@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/start/sections/GetStarted.tsx"
-          ],
-          "default": "deco-sites/start/sections/GetStarted.tsx"
-        }
-      }
-    },
-    "ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9IZWFkLnRzeA==": {
-      "title": "deco-sites/start/sections/Head.tsx",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9IZWFkLnRzeA==@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/start/sections/Head.tsx"
-          ],
-          "default": "deco-sites/start/sections/Head.tsx"
+          "default": "deco-sites/ds-thalles/sections/Head.tsx"
         }
       }
     },
@@ -10279,7 +9899,7 @@
           "$ref": "#/definitions/Resolvable"
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydC9mdW5jdGlvbnMvTG9hZEdpdEh1YlJhdy50cw=="
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kcy10aGFsbGVzL2Z1bmN0aW9ucy9Mb2FkR2l0SHViUmF3LnRz"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvZnVuY3Rpb25zL2J1dHRlckNNU0Fkcy50cw=="
@@ -10493,13 +10113,7 @@
           "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvVXNlU2xvdC50c3g="
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4"
-        },
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9HZXRTdGFydGVkLnRzeA=="
-        },
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9IZWFkLnRzeA=="
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9kcy10aGFsbGVzL3NlY3Rpb25zL0hlYWQudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvQW5hbHl0aWNzLnRzeA=="

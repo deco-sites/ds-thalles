@@ -48,8 +48,7 @@ export default function HeadComponent({
       </link>
       <meta name="theme-color" content="#003232"></meta>
       <meta name="msapplication-TileColor" content="#003232"></meta>
-      {/* TODO: Procurar o script */}
-      {/* <script async id="quicklink" src="/scripts/quicklink.umd.js"></script> */}
+
       <script
         dangerouslySetInnerHTML={{
           __html:
