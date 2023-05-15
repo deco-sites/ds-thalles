@@ -1,30 +1,36 @@
 import { ComponentChildren, JSX } from "preact";
 
-export interface TextAreaRootProps {
+export interface TextAreaRootProps extends JSX.HTMLAttributes<HTMLElement> {
   children: ComponentChildren;
 }
 
-function TextAreaRoot({ children }: TextAreaRootProps) {
+function TextAreaRoot({ children, ...rest }: TextAreaRootProps) {
   return (
-    <div className="flex items-center gap-3 h-12 py-4 px-4 w-full rounded bg-gray-800 focus-within:ring-2 ring-cyan-300">
+    <div
+      className={`${
+        rest.class ?? ""
+      } flex items-center gap-3 h-12 py-4 px-4 w-full border border-zinc-900 rounded focus-within:ring-2`}
+    >
       {children}
     </div>
   );
 }
 
-export interface TextAreaIconProps {
+export interface TextAreaIconProps extends JSX.HTMLAttributes<HTMLElement> {
   children: ComponentChildren;
 }
 
-function TextAreaIcon({ children }: TextAreaIconProps) {
-  return <div className="w-6 h-6 text-gray-400">{children}</div>;
+function TextAreaIcon({ children, ...rest }: TextAreaIconProps) {
+  return <div className={`${rest.class} w-6 h-6`}>{children}</div>;
 }
 
 function TextAreaTextArea(props: JSX.HTMLAttributes<HTMLTextAreaElement>) {
   return (
     <textarea
       {...props}
-      className="bg-transparent flex-1 text-gray-100 text-xs placeholder:text-gray-900 outline-none"
+      className={`bg-transparent flex-1 text-xs outline-none ${
+        props.class ?? ""
+      }`}
     />
   );
 }

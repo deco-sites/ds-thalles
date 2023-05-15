@@ -5,11 +5,13 @@ export default function Layout() {
   return (
     <main>
       <TextArea.Root>
-        <TextArea.TextArea placeholder="Hello World" />
+        <TextArea.TextArea placeholder="Hello Textarea" />
       </TextArea.Root>
 
+      <br />
+
       <Input.Root>
-        <Input.Input />
+        <Input.Input placeholder="Hello Input" />
       </Input.Root>
     </main>
   );
