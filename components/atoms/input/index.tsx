@@ -20,10 +20,6 @@ export interface InputIconProps extends JSX.HTMLAttributes<HTMLElement> {
   children: ComponentChildren;
 }
 
-function InputIcon({ children, ...rest }: InputIconProps) {
-  return <div className={`${rest.class} w-6 h-6`}>{children}</div>;
-}
-
 function InputInput(props: JSX.HTMLAttributes<HTMLInputElement>) {
   return (
     <input
@@ -37,10 +33,8 @@ function InputInput(props: JSX.HTMLAttributes<HTMLInputElement>) {
 
 InputRoot.displayName = "Input.Root";
 InputInput.displayName = "Input.Input";
-InputIcon.displayName = "Input.Icon";
 
 export const Input = {
   Root: InputRoot,
   Input: InputInput,
-  Icon: InputIcon,
 };
